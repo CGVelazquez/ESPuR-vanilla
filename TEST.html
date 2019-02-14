@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="test_style.css">
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1">
+</head>
+
+<body>
+    <!--<div class="logo">
+                        <img src="C:\Users\Carlos Velazquez\Documents\ESPUR\Web Design\HTML\GroupLogo.png" alt="logo">
+                </div>-->
+    <div class=container>
+        <div class="nav">
+            <!--Navigation Bar-->
+            <div class="blueRibbon">
+            </div>
+            <ul>
+                <li class="bNav"><a href="TEST.html">Inicio</a></li>
+                <li class="bNav"><a href="about.html">Sobre Nosotros</a></li>
+                <li class="bNav"><a href="services.html">Servicios</a></li>
+                <li class="bNav"><a href="news.html">Noticias</a></li>
+                <li class="bNav"><a href="contact.html">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="assets\bannerfront.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="assets\banner1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="assets\banner2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="assets\banner3.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets\banner4.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets\banner5.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <img class="frontbanner" src="assets\espurPanels.png">
+    <div class="container">
+        <div class="tBar">
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+    <div class="colorDots"><!--Want color dots to start relatively positioned next to box 1, then become fixed-->
+        <img src="assets\color dots.png" width="65px" height="400px">
+    </div>
+    <div class="container">
+        <div class="box">
+
+            Proyectos Recientes
+        </div>
+
+
+        <div class="box2">
+
+            <div class="projectCol">
+                <a href="project1.html"><img class="projectImg" src="assets\proyecto_hivecube.jpg"></a>
+                <!--<div class="projectText">Hivecube</div>-->
+            </div>
+
+
+            <div class="projectCol">
+                <a href="project2.html"><img class="projectImg" src="assets\proyecto_monkey.jpg"></a>
+                <!--<div class="projectText">Monkey Island</div>-->
+            </div>
+
+
+            <div class="projectCol">
+                <a href="project3.html"><img class="projectImg" src="assets\proyecto_pirucho.jpg"></a>
+                <!--<div class="projectText">Microred San Salvador</div>-->
+            </div>
+
+        </div>
+
+        <div class="box3">¿Quienes Somos?</div>
+
+        <div class="box4">
+            <video class="video1" controls><!--Change video-->
+                <source src="assets\movie.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="b4-col2"><!--Add text--></div>
+        </div>
+        <div class="box5">
+
+            <div class="b5-col2">
+                <div class="contactTitle">CONTÁCTANOS</div>
+                <div class="icons">
+                    <br>
+                    <img class="Icon" src="assets\address_icon.png"><br><br><br><br><br><br>
+                    <img class="Icon" src="assets\phone_icon.png"><br><br>
+                    <img class="Icon" src="assets\email_icon.png">
+                </div>
+                <div class="contactContent">
+                    <p>Energy Solutions Puerto Rico</p>
+                    <p>Ave. Ponce de León #1413, Suite 301</p>
+                    <p>San Juan, PR 00907</p>
+                    <br>
+                    <p>Teléfono: (787) 360-1981
+                        <p>Email: info@espur.energy</p>
+                    </p>
+                </div>
+            </div>
+            <img class="sol" src="assets\fillerlogo.png">
+            <div class="motto">Ponemos la energía del<br> <mark class="yellow">SOL</mark><br> en tus manos</div>
+        </div>
+        <div class="footer">Copyright © 2019 Energy Solutions PR. Todos los derechos reservados
+        </div>
+    </div>
+</body>
+
+</html>

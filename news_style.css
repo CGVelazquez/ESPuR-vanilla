@@ -1,0 +1,188 @@
+@font-face {
+    font-family: BebasRegular;
+    src: url("BebasNeue-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: FuturaMed;
+    src: url("futuramediumbt.ttf") format("truetype");
+  }
+  html {padding:0; margin:0;}
+  body{margin:0;}
+.nav{
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+    background-color: #89BF44;
+    width: 100%;
+    max-height:60px;
+    font-family: FuturaMed;
+    font-size: 20px;
+    color: white;
+    float: right;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    position: fixed;
+    z-index: 100000;
+}
+ul{
+    position: relative;
+    left: 0px;
+    list-style-type: none;
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    line-height: 30px
+}
+li {
+    float: left;
+    margin-top: 0;
+    margin-left: 30px;
+  }
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  li a:hover {
+    background-color: #92D050;
+  }
+.container{
+    text-align: center;
+    z-index: 10px;
+}  
+.capsule{
+    width: 95%;
+    min-height: 700px;
+    outline-color: #bbb;
+    display:inline-block;
+    margin-top:70px;
+    background-color: #fff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}  
+.footer{
+    background-color:#003F71;
+    width: 92%;
+    height: 60px;
+    display: inline-block;
+    text-align: left;
+    color:white;
+    line-height: 60px;
+    padding-left: 40px;
+    font-family: FuturaMed;
+  }
+.colordotsH{
+    display: inline-block;
+    max-width: 330px;
+
+}
+.title{
+    font-family: BebasRegular;
+    font-size: 430%;
+    color:#003F71;
+    display:inline-block;
+    margin:30px;
+}
+.scrollBox{
+    height: 500px;
+    width: 300px;
+    outline: 1px solid rgb(226, 226, 226);
+    float:left;
+    overflow: scroll;
+    text-align: center;
+    padding: 10px;
+    margin:40px;
+    margin-right: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.scrollBox-mobile{
+    height: 500px;
+    width: 300px;
+    outline: 1px solid rgb(226, 226, 226);
+    float:left;
+    overflow: scroll;
+    text-align: center;
+    padding: 10px;
+    margin:40px;
+    margin-right: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display:none;
+}
+.newsBox{
+    min-height: 100px;
+    width: 80%;
+    display: inline-block;
+    outline: 1px solid rgb(226, 226, 226);
+    margin:10px;
+    font-family: FuturaMed; 
+    padding:5px;
+    text-align: center;  
+}
+.newsIcon{
+    width:80%;
+    height:100%;
+    display: inline-block;
+    font-size: 10px;
+    border-radius: 10px;
+
+}
+.news{
+    min-height: 70%;
+    width: 60%;
+    display: inline-block;
+    font-family: FuturaMed;
+    margin-bottom: 40px;
+    padding:0px;
+    color: #003F71;
+}
+.news-mobile{
+    min-height: 70%;
+    width: 60%;
+    display: inline-block;
+    font-family: FuturaMed;
+    margin-bottom: 40px;
+    padding:0px;
+    display:none;
+    color: #003F71;
+}
+.content{
+    max-width: 700px;
+    text-align: left;
+    display: inline-block;
+}
+.news-img{
+    float:left;
+    max-width: 55%;
+    margin:30px;
+    margin-left: 0;
+    border-radius: 10px;
+}
+.newsBox:link {
+    color: black; 
+    background-color: transparent; 
+    text-decoration: none;
+  }
+  
+.newsBox:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+@media only screen and (max-width: 768px){
+*{margin:0;padding:0;}
+li{margin-left: 0px;font-size: 12px;}
+.footer{font-size:10px;}
+.capsule{box-shadow: none;width:100%;}
+.colordotsH{width:300px; height:45px;margin-bottom: 30px;}
+.title{margin-bottom: 0;}
+.scrollBox{display: none;}
+.news{display:none;}
+.scrollBox-mobile{height:200px;display: block;}
+.news-mobile{display:inline-block;width:80%;font-size: 120%;margin-bottom: 0;}
+.content{text-align: left;}
+.news-img{margin-top: 0;max-width:100%;}
+p{margin-top: 20px;}
+}

@@ -1,0 +1,118 @@
+@font-face {
+    font-family: BebasRegular;
+    src: url("BebasNeue-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: FuturaMed;
+    src: url("futuramediumbt.ttf") format("truetype");
+  }
+
+
+html {padding:0; margin:0;}
+body{margin:0;}
+.nav{
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+    background-color: #89BF44;
+    width: 100%;
+    max-height:60px;
+    font-family: FuturaMed;
+    font-size: 20px;
+    color: white;
+    float: right;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    position: fixed;
+    z-index: 100000;
+}
+ul{
+    position: relative;
+    left: 0px;
+    list-style-type: none;
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    line-height: 30px
+}
+li {
+    float: left;
+    margin-top: 0;
+    margin-left: 30px;
+  }
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  li a:hover {
+    background-color: #92D050;
+  }
+.container{
+    text-align: center;
+    margin:0;
+}  
+.capsule{
+    width: 95%;
+    min-height: 700px;
+    display:inline-block;
+    margin-top:70px;
+    background-color: #fff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+} 
+.col2{
+    width:50%;
+    float:right;
+}  
+.title{
+    font-family: BebasRegular;
+    font-size: 400%;
+    color:#003F71;
+    float:right;
+    margin:40px;
+    margin-bottom: 20px;
+    margin-right: 80px;
+
+}
+.colordotsH{
+    float: right;
+    margin-right: 40px
+}
+
+.content{
+    font-family: FuturaMed;
+    color: #003F71;
+    text-align: left;
+    font-size: 105%;
+    max-width: 420px;
+    float:right;
+    margin:40px;
+    margin-right: 50px;
+}
+.footer{
+    background-color:#003F71;
+    width: 92%;
+    height: 60px;
+    display: inline-block;
+    text-align: left;
+    color:white;
+    line-height: 60px;
+    padding-left: 40px;
+    font-family: FuturaMed;
+    margin:0px;
+  }
+  @media only screen and (max-width: 768px){
+    *{margin:0;padding:0;}
+    li{margin-left: 0px;font-size: 12px;}
+    .colordotsH{width:300px;height: 45px;margin-right: 50px;margin-bottom: 20px;}
+    .capsule{width:100%;box-shadow: none;}
+    .title{margin-right: 40px;margin-bottom:0;margin-top: 30px;}
+    .col2{width:100%;text-align: center;}
+    .content{width:80%;margin-top:50px;float: none;font-size: 120%;}
+    .footer{font-size:10px;}
+  }

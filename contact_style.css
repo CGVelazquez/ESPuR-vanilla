@@ -1,0 +1,204 @@
+@font-face {
+    font-family: BebasRegular;
+    src: url("BebasNeue-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: FuturaMed;
+    src: url("futuramediumbt.ttf") format("truetype");
+  }
+  html {padding:0; margin:0;}
+  body{margin:0;} 
+.nav{
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+    background-color: #89BF44;
+    width: 100%;
+    max-height:60px;
+    font-family: FuturaMed;
+    font-size: 20px;
+    color: white;
+    float: right;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    position: fixed;
+    z-index: 100000;
+}
+ul{
+    position: relative;
+    left: 0px;
+    list-style-type: none;
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    line-height: 30px
+}
+li {
+    float: left;
+    margin-top: 0;
+    margin-left: 30px;
+  }
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  li a:hover {
+    background-color: #92D050;
+  }
+.container{
+    text-align: center;
+    z-index: 10px;
+}  
+.capsule{
+    width: 95%;
+    min-height: 500px;
+    outline-color: #bbb;
+    display:inline-block;
+    background-color: #fff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin-top: 70px;
+}  
+
+.col-1{
+    float:left;
+    margin:40px;
+    margin-right: 60px;
+
+}
+.contactTitle{
+    font-family: BebasRegular;
+    font-size: 500%;
+    color:#003F71;
+}
+.contactContent{
+    font-family: FuturaMed;
+    font-size: 120%;
+    color:#003F71;
+    float:left;
+    text-align: left;
+  }
+  .icons{
+    float:left;
+  }  
+  .Icon{
+    height:25px;
+    width:25px;
+  } 
+.yDivider{
+    background-color:#F1E61A;
+    min-height:500px;
+    width: 200px;
+    float:left;
+    background-image: linear-gradient(to right,#F1E61A,#fff);
+}
+.colorDots{
+    z-index: 12px;
+    position: absolute;
+    left: 465px;
+    top: 130px;
+  }
+.col-3{
+    float:left;
+    margin:40px;
+    margin-right: 0;
+    font-family: FuturaMed;
+}
+  .consultTitle{
+    font-family: BebasRegular;
+    font-size: 500%;
+    color:#003F71;
+}
+.consultContent{
+    font-family: FuturaMed;
+    color: #003F71;
+    font-size: 110%;
+    line-height: 10px;
+    text-align: justify;
+    float:right;
+    margin-bottom: 0px;
+}
+.consultContent-mobile{
+    font-family: FuturaMed;
+    color: #003F71;
+    font-size: 110%;
+    line-height: 10px;
+    text-align: justify;
+    float:right;
+    margin-bottom: 0px;
+    display: none;
+}
+.nameBox{
+    margin:5px;
+    width:200px;
+    padding:2px;
+    outline: 1px solid #003F71;
+    font-family: FuturaMed;
+
+}
+.emailBox{
+    margin:5px;
+    width:200px;
+    padding:2px;
+    outline: 1px solid #003F71;
+    font-family: FuturaMed;
+}
+.cooBox{
+    margin:5px;
+    width:200px;
+    padding:2px;
+    outline: 1px solid #003F71;
+    font-family: FuturaMed;
+}
+.upload{
+    margin:5px;
+    width:200px;
+    padding:2px;
+    font-family: FuturaMed;
+}
+.submit{
+    width: 100px;
+    height:30px;
+    background-color: #92D050;
+    margin:5px;
+    border-radius: 5px;
+    font-family: FuturaMed;
+    color:white;
+}
+
+.footer{
+    background-color:#003F71;
+    height: 60px;
+    width:92%;
+    display: inline-block;
+    text-align: left;
+    color:white;
+    line-height: 60px;
+    padding-left: 40px;
+    font-family: FuturaMed;
+  }
+@media only screen and (max-width: 768px){
+*{margin:0;padding:0;}
+li{margin-left: 0px;font-size: 12px;}
+.footer{font-size:10px;}
+.capsule{box-shadow: none;width:100%;}
+.colorDots{display: none;}
+.yDivider{border:none; width:100%; min-height: 100px; 
+    background-image: none;background-color: #F1E61A;}
+.contactTitle{font-size: 300%;}
+.consultTitle{font-size: 300%;}
+.consultContent{display:none;margin-top: 10px;}
+.consultContent-mobile{line-height: 20px;text-align: left;display:block;margin-bottom: 20px;}
+.col-3{margin:0;padding:30px;}
+.upload{display: none;}
+.Icon{width:20px;height:20px;}
+.contactContent{font-size: 15px;margin-top: 5px;}
+.col-1{margin:30px;margin-left: 40px;}
+.icons{margin-left:3px;position: relative; bottom:10px;margin-right: 5px;}
+p{line-height: 33px;}
+}
